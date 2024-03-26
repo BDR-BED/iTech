@@ -1,0 +1,108 @@
+.mainWrapper{
+    display: grid;
+    grid-template-columns: 240px 240px 240px; /* Три стовпці шириною 100px, 200px, 100px */
+    grid-template-rows: 240px 240px 240px; /* Автоматична висота рядків */
+    grid-column-gap: 20px; /* Відступ між стовпцями */
+    grid-row-gap: 20px; /* Відступ між рядками */
+    justify-content: center; /* Горизонтальне центрування елементів */
+    align-items: center; /* Вертикальне центрування елементів */
+    position:relative;
+    top:110px;
+    width:100%;
+    height:100vh;
+    background-color: rgb(255, 255, 255);
+    transition: max-height 0.2s ease; 
+}
+.catalogElement{
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    height:240px;
+    width:240px;
+    background-color: rgba(0, 0, 0, 0.04);
+    z-index: 1;
+    border-radius: 20px;
+    justify-content: center; /* Горизонтальне центрування елементів */
+    align-items: center; /* Вертикальне центрування елементів */
+}
+.logo{
+    height:190px;
+}
+.logo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.underLogo{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+@media screen and (max-width: 1000px){
+    .mainWrapper{
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px 200px; 
+    }
+    .catalogElement{
+        height:200px;
+        width:200px;
+    }
+    .logo{
+        height:170px;
+    }
+}
+@media screen and (max-width: 700px){
+    .mainWrapper{
+        top:75px;
+        grid-template-columns: 170px 170px;
+        grid-template-rows: 170px 170px 170px 170px; 
+    }
+    .catalogElement{
+        height:170px;
+        width:170px;
+    }
+    .logo{
+        height:130px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .mainWrapper{
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 150px 150px 150px 150px 150px 150px; 
+    }
+    .catalogElement{
+        height:150px;
+        width:150px;
+    }
+    .logo{
+        height:110px;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .mainWrapper{
+        grid-template-columns: 140px 140px;
+        grid-template-rows: 140px 140px 140px 140px 140px 140px; 
+    }
+    .catalogElement{
+        height:140px;
+        width:140px;
+    }
+    .logo{
+        height:105px;
+    }
+}
+@media screen and (max-width: 280px){
+    .mainWrapper{
+        grid-template-columns: 180px;
+        grid-template-rows: 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px; 
+    }
+    .catalogElement{
+        height:180px;
+        width:180px;
+    }
+    .logo{
+        height:135px;
+    }
+}

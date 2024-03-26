@@ -1,0 +1,100 @@
+.mainDiv{
+    height:100%;
+    display: inline-block;
+    min-height: 100vh;
+}
+.profileDiv{
+    height:100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.mainTextConteiner{
+    height: 80dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    text-align: center;
+}
+.mainText{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.buttonsContainer{
+    border-top: 1px solid #000000;
+    display:flex;
+    justify-content: center;
+}
+.logInButton{
+    width:167px;
+    height: 52px;
+    background-color: #ffffff;
+    border: 2.3px solid #000000;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 13px;
+    font-family: "Robota", sans-serif;
+    font-weight: 900;
+    margin:14px 7px 14px 14px;
+
+    transition: all .5s ease;
+
+}
+.registerButton{
+    width:167px;
+    height: 52px;
+    background-color: #000000;
+    color:#ffffff;
+    border:none;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 13px;
+    font-family: "Robota", sans-serif;
+    font-weight: 900;
+    margin:14px 14px 14px 7px;
+
+    transition: all .5s ease;
+    border:none;
+}
+
+.logInButton:hover{
+    color:#ffffff;
+    background-color: #000000;
+}
+.registerButton:hover{
+    color:#000000;
+    background-color: #ffffff;
+    border: 2.3px solid #000000
+}
+
+
+@media screen and (min-width: 710px) {
+    .logInButton{
+        margin:21px 10.5px 21px 21px;
+    }
+    .registerButton{
+        margin:21px 21px 21px 10.5px;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .logInButton{
+        margin:calc(28px + 2dvh) calc(14px + 2dvh) calc(28px + 2dvh) calc(28px + 2dvh);
+    }
+    .registerButton{
+        margin:calc(28px + 2dvh) calc(28px + 2dvh) calc(28px + 2dvh) calc(14px + 2dvh);
+    }
+    .mainTextConteiner{
+        height: 75dvh;
+    }
+  }
+
+@media screen and (max-height: 710px) {
+    .mainTextConteiner{
+        height: 72dvh;
+    }
+  }
