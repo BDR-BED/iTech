@@ -1,0 +1,98 @@
+.mainDiv{
+    height:100%;
+    display: inline-block;
+    min-height: 100vh;
+    align-items: center;
+    width: 100%;
+}
+
+.profileDiv{
+    height:100%;
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper{
+    height: 80dvh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 379px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.email, .password, .send{
+    height: 58px;
+    width: 100%;
+    margin-top: 15px;
+    border: 2px solid black;
+    font-size:18px;
+}
+
+.send{
+    background-color: black;
+    border: 0;
+    margin: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 15px;
+}
+
+.header{
+    font-family: Comfortaa;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40.14px;
+    letter-spacing: -0.015em;
+    text-align: left;
+}
+
+.label{
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    width: 80%;
+    margin: 8px;
+}
+.labelUnderLine{
+    text-decoration: underline;
+    text-decoration-thickness: 1px; 
+}
+@media screen and (max-width: 400px){
+    .wrapper{
+        width: 303px;
+    }
+    .email, .password, .send{
+        height: 46px;
+        width: 100%;
+        margin-top: 13px;
+        border: 2px solid black;
+    }
+    .header{
+        font-family: Comfortaa;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 40.14px;
+        letter-spacing: -0.015em;
+        text-align: left;
+    }
+    .label{
+        font-family: "Roboto", sans-serif;
+        font-size: 11px;
+        font-weight: 100;
+        line-height: 13px;
+        text-align: center;
+        width: 80%;
+        margin: 8px;
+    }
+}

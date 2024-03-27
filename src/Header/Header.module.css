@@ -100,6 +100,130 @@
     transition: max-width 0.2s ease; 
 }
 
+
+.mainBurger{
+    position: fixed;
+    top: 0; /* Верхня границя елемента */
+    right: 0; /* Права границя елемента */
+    display:none;
+    flex-direction: row;
+    height: 100%;
+    width:100%;
+    z-index:10;
+}
+.blurDiv{
+    height: 100%;
+    width: 15%;
+    background-color: #FFFFFF0D;
+    backdrop-filter: blur(4px);
+}
+.burgerContent{
+    height:100%;
+    width: 85%;
+    background-color: #CFCFCFC2;
+    backdrop-filter: blur(8px);
+    display:flex;
+    flex-direction: column;
+}
+.burgerContent > div {
+    height:9%;
+    width:100%;
+    border-bottom: 1px solid #A2A2A2;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 32px;
+    display:flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.burgerContent > .languagesSwitch {
+    border-bottom: 1.3px solid #000000;
+    font-size: 20px;
+    font-weight: 300;
+    justify-content: center;
+    text-align: center;
+}
+.burgerContent > .profile {
+    height:19%;
+    flex-direction: column;
+    padding-left: 0px;
+}
+.profile > div{
+    height:50%;
+    width: 100%;
+}
+.profileText{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.backSvgBurger{
+    position: fixed;
+    top: 20px;
+    left: calc(0% + 20px);
+}
+.underLineLanguage{
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px; 
+}
+.backSvgBurger:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.backSvgBurger:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.buttonsWrapper{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.logInButton{
+    width:167px;
+    height: 52px;
+    background-color: #CFCFCFC2;
+    border: 2.3px solid #000000;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 13px;
+    font-family: "Robota", sans-serif;
+    font-weight: 900;
+    margin:6px 3px 6px 6px;
+
+    transition: all .5s ease;
+
+}
+.registerButton{
+    width:167px;
+    height: 52px;
+    background-color: #000000;
+    color:#CFCFCFC2;
+    border:none;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 13px;
+    font-family: "Robota", sans-serif;
+    font-weight: 900;
+    margin:6px 6px 6px 3px;
+
+    transition: all .5s ease;
+    border:none;
+}
+
+.logInButton:hover{
+    color:#CFCFCFC2;
+    background-color: #000000;
+}
+.registerButton:hover{
+    color:#000000;
+    background-color: #CFCFCFC2;
+    border: 2.3px solid #000000
+}
 /* Медіа-запит для зміни розміру зображення */
 @media screen and (max-width: 700px){
     .logoHolder{
@@ -137,4 +261,16 @@
 .backSvg{
     top: 78px;
 }
+}
+
+@media screen and (max-width: 400px){
+    .logInButton{
+        width:142px;
+        height: 44px;
+    }
+    .registerButton{
+        width:142px;
+        height: 44px;
+        font-size: 12px;
+    }
 }
